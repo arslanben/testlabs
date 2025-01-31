@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>XSS Lab</h1>
+    <form action="register.php" method="POST">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="message">Mesaj:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Gönder</button>
+    </form>
+    <a href="bestusers.php">En İyi Kullanıcıları Görüntüle</a>
+</body>
+</html>
